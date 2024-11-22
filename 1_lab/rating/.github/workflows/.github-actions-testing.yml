@@ -28,7 +28,7 @@ jobs:
 
       - name: Lint with pycodestyle
         run: |
-          pycodestyle.exe 1_lab/rating/src 1_lab/rating/test
+          pycodestyle src test
 
       - name: Test with pytest
         run: |
