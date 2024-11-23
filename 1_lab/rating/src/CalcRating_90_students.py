@@ -20,6 +20,5 @@
 #                 if self.rating[key] >= 90:
 #                   count++
 #                 if count >= 2:
-#                   key_answer = key
-                  
+#                   key_answer = key   
 #         return key_answer
