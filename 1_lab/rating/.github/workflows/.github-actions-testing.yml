@@ -23,15 +23,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m venv 1_lab/rating/.venv
-          python -m source 1_lab/rating/.venv/bin/activate
           python -m pip install --upgrade pip
           python -m pip install pycodestyle
           python -m pip install pytest
 
       - name: Lint with pycodestyle
         run: |
-          python -m pycodestyle 1_lab/rating/src 1_lab/rating/test
+          python -m pycodestyle.exe 1_lab/rating/src 1_lab/rating/test
 
       - name: Test with pytest
         run: |
