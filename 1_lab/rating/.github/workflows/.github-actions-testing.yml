@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m venv 1_lab/rating/.venv
-          source 1_lab/rating/.venv/bin/activate
+          python -m source 1_lab/rating/.venv/bin/activate
           python -m pip install --upgrade pip
           python -m pip install pycodestyle
           python -m pip install pytest
