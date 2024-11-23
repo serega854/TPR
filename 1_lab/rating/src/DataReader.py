@@ -10,6 +10,7 @@ class DataReader(ABC):
     def read(self) -> DataType:
         pass
 
+
 class JSONDataReader (DataReader):
     def read(self, file_path):
         with open(file_path, 'r') as file:
