@@ -24,8 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install pycodestyle
-          python -m pip install pytest
+          if [ -f 1_lab/rating/requirements.txt ]; then pip install -r 1_lab/rating/requirements.txt; fi
 
       - name: Lint with pycodestyle
         run: |
