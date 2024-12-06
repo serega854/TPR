@@ -9,3 +9,4 @@ class DataReader(ABC):
     @abstractmethod
     def read(self) -> DataType:
         pass
+    
