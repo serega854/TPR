@@ -24,13 +24,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f 1_lab/rating/requirements.txt ]; then pip install -r 1_lab/rating/requirements.txt; fi
+          if [ -f lab1/rating/requirements.txt ]; then pip install -r lab1/rating/requirements.txt; fi
 
       - name: Lint with pycodestyle
         run: |
-          python -m pycodestyle 1_lab/rating/src 1_lab/rating/test
+          python -m pycodestyle lab1/rating/src lab1/rating/test
 
       - name: Test with pytest
         run: |
-          python -m pytest 1_lab/rating/test
+          python -m pytest lab1/rating/test
 
