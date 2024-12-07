@@ -2,7 +2,9 @@ import json
 from .Types import DataType
 from .DataReader import DataReader
 
+
 class CaclRating90points:
+
     def __init__(self, data: DataType):
         self.data = data
 
